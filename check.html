@@ -40,6 +40,16 @@
   <p class="muted">アプリをアップデートした後は「確認」に戻っていることがあります。</p>
 </div>
 
+<!-- 診断情報（サギミエールが動いているときだけ拡張が表示する） -->
+<div id="sagimieru-diag" hidden>
+  <h2>診断情報</h2>
+  <p class="muted">うまく警告が出ないときは、この画面のスクリーンショットをお問い合わせに添えてください。</p>
+  <pre id="sagimieru-diag-text" style="white-space: pre-wrap; word-break: break-all; font-size: 14px;"></pre>
+  <button id="sagimieru-diag-try" type="button" style="font-size: 17px; padding: 12px 16px; border-radius: 10px;">警告の表示を試す</button>
+  <p id="sagimieru-diag-try-result"></p>
+</div>
+
+<a class="back" href="demo.html" style="background:#8f0000">警告の見本（デモページ）を開く</a>
 <a class="back" href="sagimieru://check">サギミエールのアプリに戻る</a>
 <p class="muted">このページは、サギミエールがSafariで動いているかを確かめるためのページです。閲覧内容を外部に送ることはありません。</p>
 </main>
