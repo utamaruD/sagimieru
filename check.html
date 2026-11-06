@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>サギミエール 動作チェック</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .result { border-radius: 14px; padding: 20px 18px; margin: 20px 0; }
+  .result h2 { margin: 0 0 8px; font-size: 22px; }
+  .ok { background: #e6f6ea; color: #14532d; border: 2px solid #22a050; }
+  .ng { background: #fff4e5; color: #6b3a00; border: 2px solid #e08a00; }
+  .back { display: block; text-align: center; font-size: 19px; font-weight: bold; padding: 16px; margin-top: 16px;
+          border-radius: 12px; background: #0a58ca; color: #fff; text-decoration: none; }
+  @media (prefers-color-scheme: dark) {
+    .ok { background: #0f2a18; color: #c9f2d5; }
+    .ng { background: #2e1f08; color: #ffe0b0; }
+  }
+</style>
+</head>
+<body>
+<main>
+<h1>サギミエール 動作チェック</h1>
+
+<!-- サギミエールが動いていると、拡張がこの2つの表示を切り替える -->
+<div id="sagimieru-ok" class="result ok" hidden>
+  <h2>✅ サギミエールは動作しています</h2>
+  <p>Safariで開いたページを自動でチェックできる状態です。</p>
+</div>
+
+<div id="sagimieru-ng" class="result ng">
+  <h2>⚠️ サギミエールが動作していません</h2>
+  <p>次の手順で設定を確認してから、このページを開き直してください。</p>
+  <ol>
+    <li>「設定」アプリを開く</li>
+    <li>「アプリ」→「Safari」→「機能拡張」を開く</li>
+    <li>「サギミエール」をオンにする</li>
+    <li>「すべてのWebサイト」を「許可」にする</li>
+  </ol>
+  <p class="muted">アプリをアップデートした後は「確認」に戻っていることがあります。</p>
+</div>
+
+<a class="back" href="sagimieru://check">サギミエールのアプリに戻る</a>
+<p class="muted">このページは、サギミエールがSafariで動いているかを確かめるためのページです。閲覧内容を外部に送ることはありません。</p>
+</main>
+</body>
+</html>
