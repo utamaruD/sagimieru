@@ -1,0 +1,1260 @@
+{
+  "version": "2026.11.17-2",
+  "updatedAt": "2026-11-17",
+  "changelog": [
+    {
+      "date": "2026-11-17",
+      "summary": "危険な組み合わせがそろったときに警告を強める仕組みを追加。レベル3：FXやAIの自動売買＋利益の保証＋高額なツール・ソフトの購入／少額の報酬＋作業ミス・連帯責任＋追加の送金（タスク詐欺）／投資の利益の出金＋税金・解除料・認証料の先払い。レベル2：AI投資＋非常に高い利回り＋LINEへの誘導／無料の副業セミナー＋簡単に稼げるという宣伝＋高額な契約。注意喚起の記事、通販・報道のサイト、勧誘の文脈がないページでは、これまでどおり警告を下げる",
+      "sources": [
+        {
+          "title": "埼玉県消費生活支援センター「副業（タスク）トラブル」啓発資料",
+          "url": "https://www.pref.saitama.lg.jp/documents/221387/6fukugyou_task.pdf",
+          "checkedAt": "2026-11-17"
+        },
+        {
+          "title": "警察庁「SNSなどを利用した「もうけ話」に注意!!」",
+          "url": "https://www.npa.go.jp/bureau/sosikihanzai/tokusyusagi/SNSmouke_tyuui.html",
+          "checkedAt": "2026-11-17"
+        },
+        {
+          "title": "金融庁「SNS・マッチングアプリ等で知り合った者や著名人を騙る者からの投資勧誘等にご注意ください！」",
+          "url": "https://www.fsa.go.jp/ordinary/chuui/sns.html",
+          "checkedAt": "2026-11-17"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-17",
+      "summary": "SNS型投資詐欺に多い特徴に対応。著名人や有名な投資家が無料で投資を教えるという宣伝、投資の「先生」や「アシスタント」を名乗る勧誘、送られたリンクからの投資アプリのインストール、利益を引き出す前に手数料や税金を先に払わせる要求を追加。利益の保証・LINEへの誘導・不審な支払いと組み合わさったときは警告を強める",
+      "sources": [
+        {
+          "title": "警察庁 SOS47「SNS型投資詐欺」",
+          "url": "https://www.npa.go.jp/bureau/safetylife/sos47/case/sns-romance/investment/",
+          "checkedAt": "2026-11-17"
+        },
+        {
+          "title": "警察庁「SNSなどを利用した「もうけ話」に注意!!」",
+          "url": "https://www.npa.go.jp/bureau/sosikihanzai/tokusyusagi/SNSmouke_tyuui.html",
+          "checkedAt": "2026-11-17"
+        },
+        {
+          "title": "金融庁「SNS・マッチングアプリ等で知り合った者や著名人を騙る者からの投資勧誘等にご注意ください！」",
+          "url": "https://www.fsa.go.jp/ordinary/chuui/sns.html",
+          "checkedAt": "2026-11-17"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "summary": "危険ドメインとの一致を優先。通販や報道サイトも、実際の勧誘がある場合は警告する。収入の数字やLINEリンク単独での警告を抑え、登録・申込みを伴う副業や投資、競馬の自動売買、パチスロ必勝法の勧誘を判定する。",
+      "sources": []
+    },
+    {
+      "date": "2026-11-11",
+      "summary": "ふつうのサイトでの誤った警告を減らす。Amazonの商品ページで、販売者名などの英単語の一部（「fanxieast」の ea など）を「EA（自動売買）」と取り違え、「メーカー保証」を利益の保証と取り違えていたのを修正（fx・ea・ai は単語として書かれているときだけ照合し、「保証」は勝利・的中・利益・元本の保証だけを対象にする）。Amazon・楽天・Yahoo!・Google・大手の銀行や証券会社・大手の新聞や経済ニュースのサイトと、大学・学校（ac.jp・ed.jp）では判定しない（だれでもページを作れる sites.google.com や楽天ブログなどは今までどおり判定する）。日本の法人などしか取れないドメイン（co.jp・or.jp・ne.jp・gr.jp）では、弱い兆候だけ（レベル1）の警告は出さない。LINE公式アカウントへのリンク・クーポンなどのプレゼント・セールの表現・運営者情報の不足など、ふつうの会社のサイトにもよくある兆候だけでは警告しない（稼ぎ方やノウハウを餌にしたLINE誘導は今までどおり警告する）",
+      "sources": []
+    },
+    {
+      "date": "2026-11-10",
+      "summary": "金融庁が警告書を出した無登録業者の一覧（fsa-list.json）を金融庁のエクセルから作成（1,104社、うちウェブサイトのドメインがわかる24社）。照合はサイトのドメインだけで行い、業者名での照合は止める（一覧には正規の会社と同じ名前やふつうの言葉も含まれ、正規のページを誤って警告するおそれがあるため）。登録済みの暗号資産交換業者の一覧を取り込まないようにし、会社名の書き方（Pte.Ltd など）をドメインと読み違えないよう修正",
+      "sources": [
+        {
+          "title": "金融庁「無登録で金融商品取引業を行う者の名称等について」",
+          "url": "https://www.fsa.go.jp/ordinary/chuui/mutouroku.html",
+          "checkedAt": "2026-11-10"
+        },
+        {
+          "title": "金融庁「無登録で暗号資産交換業を行う者の名称等について」",
+          "url": "https://www.fsa.go.jp/ordinary/chuui/angoushisan_mutouroku.html",
+          "checkedAt": "2026-11-10"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-09",
+      "summary": "金融庁に登録のない海外の投資業者（FX・暗号資産など）に対応。海外の金融ライセンス（ヴァヌアツ・セントビンセント・セーシェルなど）、日本の登録業者では認められていない高いレバレッジ、口座開設・入金ボーナス、取引口座の残高に高い利息がつくという宣伝、英語の利益保証・高利回りの表現を追加。日本の登録番号の表記がないときは「金融庁に登録のない海外の投資業者の可能性」として警告する。金融庁が警告書を出した無登録業者の一覧（fsa-list.json）と、サイトのドメインや業者名の照合も追加",
+      "sources": [
+        {
+          "title": "金融庁「無登録で金融商品取引業を行う者の名称等について」",
+          "url": "https://www.fsa.go.jp/ordinary/chuui/mutouroku.html",
+          "checkedAt": "2026-11-09"
+        },
+        {
+          "title": "金融庁「無登録で暗号資産交換業を行う者の名称等について」",
+          "url": "https://www.fsa.go.jp/ordinary/chuui/angoushisan_mutouroku.html",
+          "checkedAt": "2026-11-09"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-08",
+      "summary": "「AIに相談する」で使う ChatGPT（chatgpt.com・chat.openai.com）と Gemini（gemini.google.com）では警告を出さないようにした。相談内容を貼り付けると、AIの回答画面に警告が出てしまっていたため",
+      "sources": []
+    },
+    {
+      "date": "2026-11-07",
+      "summary": "コーチング・スクール・AI副業の勧誘パターンに対応。キャリアコーチング・マインドセット系の宣伝、AIによる投資・競馬の自動売買や自動アフィリエイト・自動note作成の宣伝、分割払い・クレジットの案内、「すぐに元が取れる」という説明を追加。LINE登録や無料相談への誘導と組み合わさったときは「高額なコーチング・スクールなどの勧誘パターン」として警告する",
+      "sources": [
+        {
+          "title": "国民生活センター「ビジネス講座のトラブルにご注意－広告・勧誘と実際の講座内容が異なる、Web会議での思わぬ勧誘に気をつけましょう－」（2026年9月16日）",
+          "url": "https://www.kokusen.go.jp/news/data/n-20260916_3.html",
+          "checkedAt": "2026-11-07"
+        },
+        {
+          "title": "国民生活センター「学生の就活の不安につけ込むトラブル－Web会議で無料カウンセリング等を受けるだけのつもりが高額契約に－」（2023年5月17日）",
+          "url": "https://www.kokusen.go.jp/news/data/n-20230517_1.html",
+          "checkedAt": "2026-11-07"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-07",
+      "summary": "初版。収益保証・高収益の宣伝・楽に稼げる宣伝・LINE誘導・契約を急がせる表現・高額請求・不審な送金方法などのルールを作成",
+      "sources": []
+    }
+  ],
+  "macros": {
+    "LINE": "((?<![a-z])line(?![a-z])|(?<!オン|ガイド|デッド|ホット|ヘッド|ネック|ボディ|スタート|ゴール|ボーダー|ファイン|ライフ)ライン)",
+    "EARN": "(稼げ|稼ぐ|稼い|稼ぎ|儲か|儲け|もうか|利益|収益|収入|万円)",
+    "FX": "(?<![a-z])fx(?![a-z])",
+    "EA": "(?<![a-z])ea(?![a-z])",
+    "AI": "(?<![a-z])ai(?![a-z])",
+    "OFFSHORE": "(vanuatu|ヴァヌアツ|バヌアツ|saintvincent|st\\.?vincent|セントビンセント|セントヴィンセント|seychelles|セーシェル|marshallislands|マーシャル諸島|belize|ベリーズ|mauritius|モーリシャス|labuan|ラブアン|comoros|コモロ|anjouan|アンジュアン|mwali|cookislands|クック諸島|samoa|サモア|britishvirginislands|英領バージン諸島|caymanislands|ケイマン諸島)",
+    "FINREG": "(金融(庁|当局|サービス|ライセンス|監督)|ライセンス|規制当局|規制を受け|認可|金融商品|license|licence|regulat|financialservice|vfsc|fsa|fsc|証券|broker|ブローカー|fx|forex)"
+  },
+  "categories": {
+    "guarantee": {
+      "label": "利益・勝ちの保証",
+      "cap": 8
+    },
+    "unrealistic": {
+      "label": "根拠の乏しい高い収益・勝率",
+      "cap": 6
+    },
+    "easy": {
+      "label": "楽に稼げるという宣伝",
+      "cap": 5
+    },
+    "line": {
+      "label": "LINE・SNSへの誘導",
+      "cap": 5,
+      "advice": "LINE登録後に高額な教材や投資を勧められるケースがあります。グループ内の成功報告や口コミが実際の利用者によるものとは限りません。サクラによる勧誘の可能性にも注意してください。"
+    },
+    "urgency": {
+      "label": "契約を急がせる表現",
+      "cap": 2
+    },
+    "price": {
+      "label": "高額な支払い・値引きの演出",
+      "cap": 5
+    },
+    "remittance": {
+      "label": "不審な支払い・送金方法",
+      "cap": 8,
+      "advice": "個人名義の口座・暗号資産・電子マネーでの支払いを求められた場合は、支払う前に家族や消費者ホットライン（188）に相談してください。"
+    },
+    "lifestyle": {
+      "label": "生活が一変するという誘い文句",
+      "cap": 2
+    },
+    "testimonial": {
+      "label": "収益を強調する体験談",
+      "cap": 3,
+      "advice": "成功談や講師の実績は、実際の利用者によるものとは限りません。鵜呑みにせず、第三者の情報も確かめてください。"
+    },
+    "seminar": {
+      "label": "無料セミナー・個別相談への誘導",
+      "cap": 1,
+      "advice": "無料セミナーや個別相談の場で、高額な契約を勧められるケースがあります。その場で契約せず、持ち帰って検討してください。"
+    },
+    "reviewBait": {
+      "label": "宣伝目的の可能性がある口コミ記事",
+      "cap": 2,
+      "advice": "この口コミ記事は販売促進を目的としている可能性があります。第三者による客観的な評価とは限らないため、ご注意ください。"
+    },
+    "infoMissing": {
+      "label": "運営者情報の不足",
+      "cap": 2
+    },
+    "coaching": {
+      "label": "高額になりやすいコーチング・スクールの宣伝",
+      "cap": 3,
+      "advice": "無料相談・説明会やWeb会議の場で、高額な講座やコーチングを勧められるケースがあります。その場で決めずに一度持ち帰り、月々の金額だけでなく総額と、解約・返金の条件を書面で確かめてください。"
+    },
+    "aiSidejob": {
+      "label": "AIや自動ツールで稼げるという宣伝",
+      "cap": 4,
+      "advice": "「AIで稼げる」「自動売買で利益が出る」という講座やツールでは、宣伝どおりの収入が得られないという相談が増えています。"
+    },
+    "gamblingPitch": {
+      "label": "競馬の自動購入・パチスロ必勝法の宣伝",
+      "cap": 3
+    },
+    "offshoreBroker": {
+      "label": "日本で登録のない海外の投資業者に多い特徴",
+      "cap": 4,
+      "advice": "日本に住む人にFX・投資・暗号資産の取引を勧めるには、金融庁・財務局への登録が必要です。お金を入れる前に、金融庁の「免許・許可・登録等を受けている業者一覧」で業者名を確かめてください。海外の無登録業者とのトラブルでは、入金したお金が戻らないことがあります。迷ったときは金融庁の金融サービス利用者相談室（0570-016811）に相談できます。"
+    },
+    "noJpRegistration": {
+      "label": "日本の登録番号の表記がない",
+      "cap": 2
+    },
+    "snsInvest": {
+      "label": "SNS型投資詐欺に多い特徴",
+      "cap": 5,
+      "advice": "著名人や投資家、その「アシスタント」を名乗る相手が無料で投資を教えることは、基本的にありません。勧められた投資アプリは公式ストアのものか、業者は金融庁に登録されているかを確かめてください。利益を引き出すのに手数料や税金を先に払うよう求められたら、払う前に警察相談専用電話（#9110）に相談してください。"
+    },
+    "taskScam": {
+      "label": "少額の報酬で作業をさせ、あとからお金を払わせる手口（タスク詐欺）",
+      "cap": 4,
+      "advice": "「いいねやスクショで報酬」と少額を払ったあと、「作業ミスの補填」「連帯責任」などと言って入金を求めるのは、タスク詐欺の典型的な流れです。報酬を受け取るためにお金を払う仕事はありません。払う前に警察相談専用電話（#9110）に相談してください。"
+    }
+  },
+  "rules": [
+    {
+      "id": "guarantee_sure",
+      "category": "guarantee",
+      "label": "「必ず儲かる」「確実に稼げる」など、利益を保証する表現があります",
+      "patterns": [
+        "(必ず|確実に|絶対に?|100%|間違いなく)(儲か|稼げ|稼ぐ|利益が出|利益を出|もうか)"
+      ],
+      "weight": 4,
+      "negatable": true
+    },
+    {
+      "id": "guarantee_income",
+      "category": "guarantee",
+      "label": "収入や利益を「保証」する表現があります",
+      "patterns": [
+        "(月収|月給|年収|日給|日収|収入|収益|利益|配当|利回り|リターン|月利|年利)[^。!?]{0,10}(保証|確約|お約束)"
+      ],
+      "weight": 5,
+      "negatable": true
+    },
+    {
+      "id": "guarantee_noloss",
+      "category": "guarantee",
+      "label": "「元本保証」「絶対に損をしない」など、損失がないとする表現があります",
+      "patterns": [
+        "元本(保証|確保|割れなし|割れしない)",
+        "(絶対に?|一切|決して)損(を|は)?(しない|しません|させ)",
+        "損失(ゼロ|0|なし)",
+        "ノーリスク",
+        "リスク(ゼロ|0|なし)で(稼|儲|運用|投資)"
+      ],
+      "weight": 4,
+      "negatable": true
+    },
+    {
+      "id": "guarantee_product",
+      "category": "guarantee",
+      "label": "投資・ギャンブルで「必ず勝てる」「負けない」とする表現があります",
+      "patterns": [
+        "({FX}|{EA}|自動売買|バイナリー|ハイロー|ハイアンドロー|仮想通貨|暗号資産|ビットコイン|{AI}投資|{AI}トレード|競馬|馬券|競艇|ボートレース|競輪|パチンコ|スロット)[^。!?]{0,20}((必ず|確実に|絶対に?)(勝て[るま]?|勝つ|勝ち|当た[るり]|儲か[るり]?|稼げ[るま]?)|負けない|負けなし|(勝利|勝ち|的中|利益|収益|元本)保証)"
+      ],
+      "weight": 3,
+      "negatable": true
+    },
+    {
+      "id": "guarantee_en",
+      "category": "guarantee",
+      "label": "「guaranteed profit」「risk-free」など、英語で利益を保証する表現があります",
+      "patterns": [
+        "guaranteed(profit|return|income|payout|interest)",
+        "(profit|return|income)s?(are|is)guaranteed",
+        "risk-?free(profit|investment|trading|return|income)",
+        "(no|zero)(risk|loss)(investment|trading|guarantee)"
+      ],
+      "weight": 4
+    },
+    {
+      "id": "unrealistic_winrate",
+      "category": "unrealistic",
+      "label": "「勝率90%以上」など、現実的とは考えにくい勝率・的中率をうたっています",
+      "patterns": [
+        "(勝率|的中率|成功率)(9[0-9]|100)(\\.[0-9]+)?%"
+      ],
+      "weight": 4
+    },
+    {
+      "id": "unrealistic_recovery",
+      "category": "unrealistic",
+      "label": "非常に高い回収率をうたっています",
+      "patterns": [
+        "回収率([2-9][0-9]{2}|[1-9][0-9]{3,})%"
+      ],
+      "weight": 3
+    },
+    {
+      "id": "unrealistic_rate",
+      "category": "unrealistic",
+      "label": "非常に高い利回りをうたっています（月利3%以上・年利20%以上など）",
+      "patterns": [
+        "月利([3-9]|[1-9][0-9])(\\.[0-9]+)?%",
+        "年利([2-9][0-9]|[1-9][0-9]{2,})(\\.[0-9]+)?%"
+      ],
+      "weight": 4
+    },
+    {
+      "id": "unrealistic_multiply",
+      "category": "unrealistic",
+      "label": "資金が何倍にも増えるとうたっています",
+      "patterns": [
+        "(資産|元金|元手|お金|資金)が?[^。!?]{0,4}([3-9]|[1-9][0-9]+)倍"
+      ],
+      "weight": 2
+    },
+    {
+      "id": "unrealistic_income",
+      "category": "unrealistic",
+      "label": "「月収100万円」「1日3万円」など、根拠の示されない高収入をうたっています",
+      "patterns": [
+        "(月収|月給|毎月|月に|ひと月で|1ヶ月で|1か月で|1カ月で|1ヵ月で)[^0-9。!?]{0,3}[1-9][0-9]{2,}万",
+        "(日給|日収|毎日|1日で?|一日で?|1日あたり)[^0-9。!?]{0,3}([3-9]|[1-9][0-9]+)万円",
+        "年収[^0-9。!?]{0,3}[1-9][0-9]{3,}万"
+      ],
+      "weight": 3
+    },
+    {
+      "id": "unrealistic_rate_en",
+      "category": "unrealistic",
+      "label": "「1日1%」「月10%」など、非常に高い利回りをうたっています",
+      "patterns": [
+        "(?<![0-9.])[0-9]+(\\.[0-9]+)?%(per|a|every)?(day|daily|week|weekly)(profit|return|interest|income|roi)",
+        "(?<![0-9.])([3-9]|[1-9][0-9])(\\.[0-9]+)?%(per|a|every)?(month|monthly)(profit|return|interest|income|roi)",
+        "(?<![0-9.])([2-9][0-9]|[1-9][0-9]{2,})(\\.[0-9]+)?%(per|a)?(year|yearly|annual|annually|apy)(profit|return|interest|income|roi)"
+      ],
+      "weight": 3
+    },
+    {
+      "id": "unrealistic_account_interest",
+      "category": "unrealistic",
+      "label": "取引口座の残高（証拠金）に高い利息がつくとうたっています",
+      "patterns": [
+        "(取引口座|証拠金|口座残高)[^。!?]{0,20}(年利|年率|金利|利息)[^。!?0-9]{0,6}(?<![0-9.])([5-9]|[1-9][0-9])(\\.[0-9]+)?%",
+        "(年利|年率|金利|利息)[^。!?0-9]{0,6}(?<![0-9.])([5-9]|[1-9][0-9])(\\.[0-9]+)?%[^。!?]{0,20}(取引口座|証拠金)",
+        "(tradingaccount|margin|accountbalance|balance)[^.!?]{0,60}(?<![0-9.])([5-9]|[1-9][0-9])(\\.[0-9]+)?%(annual|yearly)?interest",
+        "(?<![0-9.])([5-9]|[1-9][0-9])(\\.[0-9]+)?%(annual|yearly)?interest[^.!?]{0,40}(tradingaccount|margin|accountbalance|balance)"
+      ],
+      "weight": 3
+    },
+    {
+      "id": "easy_passive",
+      "category": "easy",
+      "label": "「放置するだけ」「スマホだけで稼げる」など、手間なく稼げるとうたっています",
+      "patterns": [
+        "(放置(する)?だけ|ほったらかし)[^。!?]{0,16}(稼|儲|利益|収益|収入|月収)",
+        "(寝てる間|寝ている間|寝ながら)[^。!?]{0,10}{EARN}",
+        "スマホ(だけ|1台|一台)で?[^。!?]{0,10}{EARN}",
+        "(ポチポチ|コピペ|タップ)(する)?だけ",
+        "1日(たった)?[0-9]+分(だけ|で|の作業)",
+        "完全(自動|放置)[^。!?]{0,10}{EARN}",
+        "自動で(稼|儲|収益|利益|お金|収入)"
+      ],
+      "weight": 3,
+      "negatable": true
+    },
+    {
+      "id": "easy_anyone",
+      "category": "easy",
+      "label": "「誰でも」「初心者でも簡単に」稼げるとうたっています",
+      "patterns": [
+        "(誰でも|だれでも|初心者でも|未経験でも|知識ゼロでも|知識なしでも|主婦でも|学生でも)[^。!?]{0,12}(稼げ|儲か|稼ぐ|利益|月収|万円|勝て)",
+        "(簡単|かんたん|カンタン)に(稼げ|儲か|稼ぐ|お金|利益)"
+      ],
+      "weight": 2,
+      "negatable": true
+    },
+    {
+      "id": "line_lure",
+      "category": "line",
+      "label": "「LINE登録で稼ぎ方を無料プレゼント」など、稼ぎ方やノウハウを餌にLINEへの登録に誘導しています",
+      "patterns": [
+        "{LINE}(@|公式|アカウント)?[^。!?]{0,15}(友だち|友達|登録|追加)[^。!?]{0,20}(教え|ノウハウ|稼ぎ方|儲け方|手法|攻略|限定公開|副業|投資|{EARN})",
+        "(ノウハウ|稼ぎ方|儲け方|手法|攻略法|限定公開|副業|{EARN})[^。!?]{0,25}{LINE}[^。!?]{0,10}(登録|追加|友だち|友達|受け取|で)"
+      ],
+      "weight": 3
+    },
+    {
+      "id": "line_gift",
+      "category": "line",
+      "label": "「LINE登録で無料プレゼント」など、LINEへの登録に誘導しています",
+      "patterns": [
+        "{LINE}(@|公式|アカウント)?[^。!?]{0,15}(友だち|友達|登録|追加)[^。!?]{0,20}(無料|プレゼント|配布|特典|公開|受け取|お渡し)",
+        "(無料|プレゼント|特典|配布)[^。!?]{0,25}{LINE}[^。!?]{0,10}(登録|追加|友だち|友達|受け取|で)"
+      ],
+      "weight": 2
+    },
+    {
+      "id": "line_signup",
+      "category": "line",
+      "label": "LINEへの登録や友だち追加を案内しています",
+      "patterns": [
+        "{LINE}(公式)?(アカウント)?(に|へ|の|を|で)?(今すぐ)?(登録|友だち追加|友達追加)"
+      ],
+      "weight": 2
+    },
+    {
+      "id": "line_group",
+      "category": "line",
+      "label": "LINEの投資グループ・オープンチャットへ誘導しています",
+      "patterns": [
+        "{LINE}[^。!?]{0,10}(グループ|オープンチャット|オプチャ)[^。!?]{0,20}(投資|稼|儲|利益|銘柄|株|{FX}|仮想通貨|暗号資産)",
+        "(投資|株|{FX}|仮想通貨|暗号資産)[^。!?]{0,15}{LINE}[^。!?]{0,6}(グループ|オープンチャット)"
+      ],
+      "weight": 3
+    },
+    {
+      "id": "urgency_strong",
+      "category": "urgency",
+      "label": "「残りわずか」「先着○名」など、人数や期限で契約を急がせています",
+      "patterns": [
+        "残り[0-9]+(名|枠|席|人)",
+        "先着[0-9]+名",
+        "[0-9]+名(様)?限定",
+        "限定[0-9]+名",
+        "二度と(ない|手に入|公開し)",
+        "最後のチャンス",
+        "締め?切り?間近",
+        "まもなく(終了|締め?切)"
+      ],
+      "weight": 2
+    },
+    {
+      "id": "urgency_weak",
+      "category": "urgency",
+      "label": "「今だけ」「本日限定」など、期限を強調しています",
+      "patterns": [
+        "今だけ",
+        "本日限定",
+        "期間限定",
+        "今すぐ(登録|申し込|申込|参加|購入|受け取)",
+        "(本日|今日)中に"
+      ],
+      "weight": 1
+    },
+    {
+      "id": "price_anchor",
+      "category": "price",
+      "label": "「通常50万円が今だけ10万円」など、大きな値引きを演出しています",
+      "patterns": [
+        "(通常|定価|本来|正規価格|元値)[^。!?]{0,10}[1-9][0-9]+万円[^。!?]{0,30}[0-9]+(万)?円"
+      ],
+      "weight": 3
+    },
+    {
+      "id": "price_high",
+      "category": "price",
+      "label": "教材・ツール・スクールなどに高額（10万円以上）な支払いを求めています",
+      "patterns": [
+        "(教材|塾|スクール|コンサル|サロン|ツール|ソフト|システム|プログラム|コミュニティ|講座|コース|マニュアル|ノウハウ)[^。!?]{0,20}[1-9][0-9]+万([0-9]{1,4})?円",
+        "(教材|塾|スクール|コンサル|サロン|ツール|ソフト|システム|プログラム|コミュニティ|講座|コース|マニュアル|ノウハウ)[^。!?]{0,20}(?<![0-9])[1-9][0-9]{5,6}円"
+      ],
+      "weight": 2
+    },
+    {
+      "id": "pay_loan",
+      "category": "remittance",
+      "label": "借金をしてでも支払うよう促す表現があります",
+      "patterns": [
+        "(借りて|借金して|消費者金融|カードローン|学生ローン|リボ払いで)[^。!?]{0,20}(支払|払|購入|参加|申し込|申込|投資)",
+        "(ローン|借金|借り入れ)[^。!?]{0,10}(してでも|しても)[^。!?]{0,10}(すぐ|元が|回収|取り戻)"
+      ],
+      "weight": 4
+    },
+    {
+      "id": "remit_personal",
+      "category": "remittance",
+      "label": "個人名義の口座への振込を求めています",
+      "patterns": [
+        "個人(名義)?の?口座[^。!?]{0,15}(振込|振り込|送金|入金)",
+        "(振込|振り込み|送金|入金)先[^。!?]{0,10}個人(名義)?"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "remit_crypto",
+      "category": "remittance",
+      "label": "暗号資産（仮想通貨）での送金・支払いを求めています",
+      "patterns": [
+        "(ビットコイン|btc|仮想通貨|暗号資産|usdt|テザー|イーサリアム)[^。!?]{0,12}(送金|入金|支払|お支払|振込|振り込)[^。!?]{0,6}(してください|ください|をお願い|いただ|のみ)",
+        "(送金|入金|お支払い?)[^。!?]{0,10}(ビットコイン|btc|仮想通貨|暗号資産|usdt|テザー)(で|のみ|にて)"
+      ],
+      "weight": 4
+    },
+    {
+      "id": "remit_overseas",
+      "category": "remittance",
+      "label": "海外や指定の取引所・口座への入金を求めています",
+      "patterns": [
+        "(海外|指定)の?(取引所|口座|業者)[^。!?]{0,15}(入金|送金|口座開設|登録)"
+      ],
+      "weight": 3
+    },
+    {
+      "id": "remit_giftcard",
+      "category": "remittance",
+      "label": "電子マネーやギフトカードでの支払いを求めています",
+      "patterns": [
+        "(電子マネー|ギフトカード|プリペイドカード|itunesカード|appleギフトカード|amazonギフトカード|googleplayカード)[^。!?]{0,15}(で支払|でお支払|を購入して|の番号を)"
+      ],
+      "weight": 4
+    },
+    {
+      "id": "offshore_license",
+      "category": "offshoreBroker",
+      "label": "ヴァヌアツ・セントビンセント・セーシェルなど、海外の金融ライセンスや所在地をうたっています",
+      "patterns": [
+        "{OFFSHORE}[^。.!?]{0,60}{FINREG}",
+        "{FINREG}[^。.!?]{0,60}{OFFSHORE}"
+      ],
+      "weight": 3
+    },
+    {
+      "id": "offshore_leverage",
+      "category": "offshoreBroker",
+      "label": "日本の登録業者では認められていない高いレバレッジ（26倍以上）をうたっています",
+      "patterns": [
+        "レバレッジ[^。!?0-9]{0,8}(?<![0-9.])(2[6-9]|[3-9][0-9]|[1-9][0-9]{2,})倍",
+        "(?<![0-9.])(2[6-9]|[3-9][0-9]|[1-9][0-9]{2,})倍の?レバレッジ",
+        "leverage[^.!?]{0,20}(?<![0-9])1:(2[6-9]|[3-9][0-9]|[1-9][0-9]{2,})(?![0-9])",
+        "(?<![0-9])1:[1-9][0-9]{2,}leverage"
+      ],
+      "weight": 2
+    },
+    {
+      "id": "offshore_bonus",
+      "category": "offshoreBroker",
+      "label": "口座開設・入金ボーナスや「ゼロカット」など、海外のFX業者に多い宣伝があります",
+      "patterns": [
+        "(口座開設|入金|新規口座|ウェルカム|未入金)ボーナス",
+        "[0-9]+%入金ボーナス",
+        "ゼロカット",
+        "(deposit|welcome|nodeposit|trading)bonus"
+      ],
+      "weight": 2
+    },
+    {
+      "id": "offshore_pamm",
+      "category": "offshoreBroker",
+      "label": "PAMM・コピートレードなど、運用をほかのトレーダーに任せる仕組みを勧めています",
+      "patterns": [
+        "pamm",
+        "mam(口座|account|システム)",
+        "copytrad",
+        "コピートレード",
+        "ミラートレード",
+        "mon[ea]ymanager"
+      ],
+      "weight": 1
+    },
+    {
+      "id": "lifestyle",
+      "category": "lifestyle",
+      "label": "「脱サラ」「不労所得」「人生逆転」など、生活が一変するとうたっています",
+      "patterns": [
+        "脱サラ",
+        "会社(を|に)?辞め[^。!?]{0,10}(られ|て|た)",
+        "経済的自由",
+        "億り人",
+        "人生(逆転|が変わ)",
+        "一生(お金に困らない|働かなくて)",
+        "働かずに[^。!?]{0,8}(稼|収入|生活)",
+        "不労所得"
+      ],
+      "weight": 2
+    },
+    {
+      "id": "testimonial",
+      "category": "testimonial",
+      "label": "収入額を強調した体験談・成功報告があります",
+      "patterns": [
+        "(喜びの声|受講生の声|お客様の声|利用者の声|会員様の声|参加者の声|体験談|実績者)[^。!?]{0,40}([0-9]+万|達成|稼)",
+        "(月収|月|日給|1日)[^。!?]{0,4}[0-9]+万(円)?達成",
+        "[0-9]+万(円)?(稼げ|稼い|の利益)(ました|た)"
+      ],
+      "weight": 2
+    },
+    {
+      "id": "seminar",
+      "category": "seminar",
+      "label": "無料セミナー・個別相談への申込を促しています",
+      "patterns": [
+        "(無料|0円|参加費無料)[^。!?]{0,6}(セミナー|勉強会|説明会|ウェビナー|オンライン講座|個別相談|個別面談)"
+      ],
+      "weight": 1
+    },
+    {
+      "id": "coaching_pitch",
+      "category": "coaching",
+      "label": "キャリアコーチング・起業塾・副業スクールなどの宣伝があります",
+      "patterns": [
+        "(キャリア|ライフ|起業|ビジネス|副業|マインド|人生)コーチング",
+        "(起業|副業|ビジネス|在宅ワーク|{AI}|sns運用|webデザイン|動画編集)(塾|スクール|アカデミー|コミュニティ|サロン)",
+        "オンラインサロン",
+        "(個別|1on1|マンツーマン)(コーチング|コンサル|サポート)[^。!?]{0,20}{EARN}"
+      ],
+      "weight": 2
+    },
+    {
+      "id": "coaching_mindset",
+      "category": "coaching",
+      "label": "「マインドセット」「本気の人だけ」など、気持ちをあおる表現があります",
+      "patterns": [
+        "マインドセット",
+        "成功者の(思考|マインド|習慣|考え方)",
+        "(本気|覚悟)(の|が)(ある)?(人|方)(だけ|のみ|限定)",
+        "行動(でき|し)ない(人|方)は",
+        "(稼げない|変われない)(人|方)の(特徴|共通点)",
+        "自己投資[^。!?]{0,10}(惜しま|ケチ|できない)"
+      ],
+      "weight": 1
+    },
+    {
+      "id": "ai_sidejob",
+      "category": "aiSidejob",
+      "label": "「AI副業」「AIで自動売買」「自動アフィリエイト」など、AIや自動ツールで稼げるとうたっています",
+      "patterns": [
+        "ai副業",
+        "({AI}|人工知能|chatgpt|(?<![a-z])gpt|生成ai)(で|を使って|を使えば|に任せて)[^。!?]{0,8}({EARN}|副業|月[0-9]+万)",
+        "({AI}|人工知能|chatgpt|(?<![a-z])gpt)[^。!?]{0,12}(株|日本株|米国株|仮想通貨|暗号資産|ビットコイン|{FX}|競馬|馬券|競艇|ボートレース)[^。!?]{0,12}(自動|予想|売買|運用|{EARN})",
+        "(株|仮想通貨|暗号資産|ビットコイン|{FX}|競馬|馬券|競艇)[^。!?]{0,12}({AI}|人工知能)[^。!?]{0,12}(自動|予想|売買|運用|{EARN})",
+        "自動(アフィリエイト|ブログ|記事作成|投稿ツール)",
+        "(note|ノート|ブログ|記事)[^。!?]{0,12}(自動(作成|生成|投稿)|aiで(作成|量産|書))",
+        "({AI}|chatgpt)[^。!?]{0,10}(note|ノート|ブログ|記事)[^。!?]{0,10}(量産|{EARN}|販売)"
+      ],
+      "weight": 3,
+      "negatable": true
+    },
+    {
+      "id": "gambling_pitch",
+      "category": "gamblingPitch",
+      "label": "競馬・馬券の自動売買や、パチンコ・パチスロの必勝法を宣伝しています",
+      "patterns": [
+        "(競馬|馬券)[^。!?]{0,12}(自動売買|自動投票|自動購入)",
+        "(パチスロ|パチンコ|スロット)[^。!?]{0,12}(必勝法|必勝マニュアル|攻略商材)"
+      ],
+      "weight": 3,
+      "negatable": true
+    },
+    {
+      "id": "price_installment",
+      "category": "price",
+      "label": "分割払い・クレジット・ローンでの支払いを案内しています",
+      "patterns": [
+        "分割(払い)?(ok|可|可能|対応|できます)",
+        "(個別クレジット|ショッピングローン|教育ローン|ローン)(対応|払い|審査|も?(ご)?利用(可|いただけ|でき))",
+        "クレジット(カード)?の?(枠|限度額)",
+        "(月々|月額|毎月)(たった|わずか)?[0-9]+(千|,?000)?円(から|で|〜|~)[^。!?]{0,10}(受講|参加|始め)"
+      ],
+      "weight": 2
+    },
+    {
+      "id": "price_payback",
+      "category": "price",
+      "label": "「すぐに元が取れる」など、支払った分を収入で取り戻せるとしています",
+      "patterns": [
+        "(すぐに?|簡単に|[0-9]+(か|ヶ|カ|ヵ)?月で)元(が|は|を)?取れ",
+        "(講座|受講|参加|スクール|コーチング)(代|料|費|費用)[^。!?]{0,12}(取り戻せ|回収でき|すぐに?元)",
+        "稼ぎながら(払|支払)"
+      ],
+      "weight": 2,
+      "negatable": true
+    },
+    {
+      "id": "review_bait",
+      "category": "reviewBait",
+      "label": "「詐欺ではない」「怪しくない」と強調する宣伝的な記述があります",
+      "patterns": [
+        "(詐欺|怪しい|あやしい|胡散臭い)(では|じゃ)(ありません|ない)",
+        "(詐欺|怪しい)(か|なのか)?\\??[^。!]{0,15}(徹底|検証|調査|暴露|評判|口コミ)[^。!]{0,40}(おすすめ|購入|登録|{LINE})"
+      ],
+      "weight": 2
+    },
+    {
+      "id": "invest_celebrity",
+      "category": "snsInvest",
+      "label": "著名人や有名な投資家が無料で投資を教えるとうたっています",
+      "patterns": [
+        "(著名人|有名人|著名な?投資家|有名な?投資家|カリスマ投資家|伝説の投資家|億り人|経済評論家|経済アナリスト)[^。!?]{0,20}(無料で|直接|特別に|あなただけに)[^。!?]{0,12}(教え|指導|配信|伝授|投資(教室|講座|塾|勉強会)|銘柄)",
+        "(無料で|特別に|あなただけに)[^。!?]{0,12}(著名人|有名人|著名な?投資家|有名な?投資家|カリスマ投資家|伝説の投資家|億り人)[^。!?]{0,12}(教え|指導|投資(教室|講座|塾|勉強会)|銘柄)"
+      ],
+      "weight": 3
+    },
+    {
+      "id": "invest_assistant",
+      "category": "snsInvest",
+      "label": "投資の「先生」やその「アシスタント」を名乗り、指示どおりに投資するよう勧めています",
+      "patterns": [
+        "(投資|株|銘柄|{FX}|暗号資産|仮想通貨)[^。!?]{0,30}(先生|投資家|講師|アナリスト)の(アシスタント|助手|秘書)",
+        "(先生|投資家|講師|アナリスト)の(アシスタント|助手|秘書)[^。!?]{0,30}(投資|株|銘柄|{FX}|暗号資産|仮想通貨)",
+        "(先生|講師|アシスタント)の(言う|指示|言われた)(とおり|通り)に(すれば|するだけ|買えば|投資)"
+      ],
+      "weight": 3
+    },
+    {
+      "id": "invest_app",
+      "category": "snsInvest",
+      "label": "専用の投資アプリを、送られたリンクなどからインストールするよう勧めています",
+      "patterns": [
+        "(投資|取引|トレード|運用)アプリ[^。!?]{0,20}(url|リンク)から[^。!?]{0,6}(ダウンロード|インストール)",
+        "(appstore|googleplay|アプリストア|公式ストア)(では|に|で)?(は)?(配信|公開|掲載)?(されていない|していない|ない)[^。!?]{0,20}(投資|取引|トレード|運用)アプリ"
+      ],
+      "weight": 2
+    },
+    {
+      "id": "withdraw_fee",
+      "category": "remittance",
+      "label": "利益を引き出す（出金する）前に、手数料や税金などを先に払うよう求めています",
+      "patterns": [
+        "出金[^。!?]{0,15}(手数料|税金|保証金|違約金|解除料|認証料|解約金)[^。!?]{0,15}(先に|事前に|前もって)[^。!?]{0,6}(入金|振り?込(んで|み)?|送金|お?支払い?)(して(ください|いただ)|ください|が必要(です|になります|となります)|をお願い|いただきます)",
+        "(手数料|税金|保証金|違約金|解除料|認証料)[^。!?]{0,15}(入金|振り?込|送金|お?支払い?)[^。!?]{0,6}(しない|しなければ|されない|されなければ|いただけない|いただかないと|が確認でき(ない|るまで))[^。!?]{0,12}出金(でき|され|いたしかね|が完了)",
+        "(口座|資金|出金)[^。!?]{0,6}(凍結|ロック)[^。!?]{0,15}解除[^。!?]{0,10}(手数料|料金|費用)",
+        "凍結解除[^。!?]{0,6}(手数料|料金|費用|保証金)[^。!?]{0,15}(必要|入金|振り?込|支払)"
+      ],
+      "weight": 4,
+      "negatable": true
+    },
+    {
+      "id": "auto_trade",
+      "category": "aiSidejob",
+      "label": "FXや株などの自動売買ツール・AI投資で利益が出るとうたっています",
+      "patterns": [
+        "({FX}|為替|ゴールド|仮想通貨|暗号資産|ビットコイン|株)[^。!?]{0,10}自動売買",
+        "自動売買(ツール|ソフト|システム|プログラム|bot|ボット)",
+        "{EA}[^。!?]{0,4}(ツール|ソフト|販売|購入|を導入|で運用)",
+        "({AI}|人工知能)[^。!?]{0,6}(投資|資産運用|自動売買|トレード|運用システム)",
+        "(投資|資産運用|トレード)[^。!?]{0,4}({AI}|人工知能)[^。!?]{0,8}(自動|運用|{EARN})"
+      ],
+      "weight": 2,
+      "negatable": true
+    },
+    {
+      "id": "task_reward",
+      "category": "taskScam",
+      "label": "「いいね」「スクショ」などの簡単な作業で少額の報酬がもらえるとうたっています",
+      "patterns": [
+        "(いいね|フォロー|スクショ|スクリーンショット|高評価|チャンネル登録|タスク|任務|ミッション)[^。!?]{0,20}([0-9]{2,4})円[^。!?]{0,8}(報酬|もらえ|稼げ|支払|お渡し|振り?込)",
+        "(いいね|フォロー|スクショ|スクリーンショット|高評価|チャンネル登録)(する|して|を押す|を送る|を撮る)?だけで[^。!?]{0,12}(報酬|円|稼|もらえ)"
+      ],
+      "weight": 2,
+      "negatable": true
+    },
+    {
+      "id": "task_penalty",
+      "category": "taskScam",
+      "label": "作業のミスや「連帯責任」を理由に、お金の負担を求めています",
+      "patterns": [
+        "(作業|タスク|操作|注文|任務|ミッション|入力)[^。!?]{0,10}(ミス|間違|失敗|エラー)[^。!?]{0,25}(違約金|罰金|ペナルティ|補填|補てん|弁償|賠償|連帯責任|凍結)",
+        "(チーム|グループ|メンバー|全員)[^。!?]{0,15}連帯責任",
+        "連帯責任[^。!?]{0,20}(報酬|出金|入金|送金|支払|補填|補てん)"
+      ],
+      "weight": 2
+    },
+    {
+      "id": "task_prepay",
+      "category": "remittance",
+      "label": "報酬を受け取る・作業を続けるために、追加の入金や送金を求めています",
+      "patterns": [
+        "(報酬|給料|給与|残高|ポイント|利益|お金)[^。!?]{0,12}(受け取|出金|引き出|返金|お渡し)[^。!?]{0,10}(ため|には|前)に?[^。!?]{0,15}(入金|送金|振り?込(んで|み)?|チャージ|立て?替)(して|が必要|しなければ|しないと|ください|をお願い)",
+        "(タスク|任務|ミッション|作業)[^。!?]{0,20}(続ける|進める|完了|再開|解除)[^。!?]{0,8}(には|ために|ため)[^。!?]{0,15}(入金|送金|振り?込|チャージ|立て?替)",
+        "(ミス|間違|失敗|エラー)[^。!?]{0,20}(補填|補てん|取り戻|回復|やり直)[^。!?]{0,20}(入金|送金|振り?込(んで|み)?|チャージ)(して|が必要|しなければ|しないと|ください|をお願い)"
+      ],
+      "weight": 4,
+      "negatable": true
+    },
+    {
+      "id": "extra_payment",
+      "category": "remittance",
+      "label": "「再度」「追加で」と、さらに入金・送金するよう求めています",
+      "patterns": [
+        "(再度|もう一度|追加で|追加の|改めて)[^。!?]{0,12}(入金|送金|振り?込(んで|み)?|チャージ)(して|が必要|しなければ|しないと|ください|をお願い)"
+      ],
+      "weight": 2,
+      "negatable": true
+    }
+  ],
+  "combos": [
+    {
+      "id": "guarantee_line",
+      "requires": [
+        "guarantee",
+        "line"
+      ],
+      "bonus": 3,
+      "label": "「利益の保証」と「LINEへの誘導」が組み合わされています"
+    },
+    {
+      "id": "guarantee_price",
+      "requires": [
+        "guarantee",
+        "price"
+      ],
+      "bonus": 3,
+      "label": "「利益の保証」と「高額な支払い」が組み合わされています"
+    },
+    {
+      "id": "unrealistic_line",
+      "requires": [
+        "unrealistic",
+        "line"
+      ],
+      "bonus": 2,
+      "label": "「高い収益の宣伝」と「LINEへの誘導」が組み合わされています"
+    },
+    {
+      "id": "easy_line",
+      "requires": [
+        "easy",
+        "line"
+      ],
+      "bonus": 2,
+      "label": "「楽に稼げる」という宣伝と「LINEへの誘導」が組み合わされています"
+    },
+    {
+      "id": "easy_unrealistic",
+      "requires": [
+        "easy",
+        "unrealistic"
+      ],
+      "bonus": 2,
+      "label": "「楽に稼げる」という宣伝と「高い収益」の主張が組み合わされています"
+    },
+    {
+      "id": "urgency_price",
+      "requires": [
+        "urgency",
+        "price"
+      ],
+      "bonus": 2,
+      "label": "期限や人数の限定で、高額な契約を急がせています"
+    },
+    {
+      "id": "coaching_lure",
+      "requires": [
+        "coaching"
+      ],
+      "anyOf": [
+        "line",
+        "seminar"
+      ],
+      "bonus": 2,
+      "label": "「コーチング・スクールの宣伝」と「LINE登録・無料相談への誘導」が組み合わされています"
+    },
+    {
+      "id": "aiSidejob_lure",
+      "requires": [
+        "aiSidejob"
+      ],
+      "anyOf": [
+        "line",
+        "seminar"
+      ],
+      "bonus": 2,
+      "label": "「AIや自動ツールで稼げる」という宣伝と「LINE登録・無料相談への誘導」が組み合わされています"
+    },
+    {
+      "id": "offshore_profit",
+      "requires": [
+        "offshoreBroker"
+      ],
+      "anyOf": [
+        "guarantee",
+        "unrealistic",
+        "remittance"
+      ],
+      "bonus": 2,
+      "label": "「海外の業者に多い特徴」と「高い収益・利息の宣伝」が組み合わされています"
+    },
+    {
+      "id": "remittance_profit",
+      "requires": [
+        "remittance"
+      ],
+      "anyOf": [
+        "guarantee",
+        "unrealistic",
+        "easy"
+      ],
+      "bonus": 4,
+      "label": "「高い収益の宣伝」と「不審な支払い方法」が組み合わされています"
+    },
+    {
+      "id": "snsInvest_lure",
+      "requires": [
+        "snsInvest"
+      ],
+      "anyOf": [
+        "guarantee",
+        "line",
+        "remittance"
+      ],
+      "bonus": 3,
+      "label": "「SNS型投資詐欺に多い特徴」と「利益の保証・LINEへの誘導・不審な支払い」が組み合わされています"
+    },
+    {
+      "id": "autotrade_guarantee_software",
+      "requires": [
+        "guarantee"
+      ],
+      "ruleGroups": [
+        [
+          "auto_trade"
+        ],
+        [
+          "price_high"
+        ]
+      ],
+      "minLevel": 3,
+      "bonus": 3,
+      "label": "「FXやAIの自動売買」「利益の保証」「高額なツール・ソフトの購入」がそろっています"
+    },
+    {
+      "id": "task_scam",
+      "requires": [],
+      "ruleGroups": [
+        [
+          "task_reward"
+        ],
+        [
+          "task_penalty"
+        ],
+        [
+          "task_prepay",
+          "extra_payment",
+          "withdraw_fee",
+          "remit_personal",
+          "remit_crypto",
+          "remit_giftcard"
+        ]
+      ],
+      "minLevel": 3,
+      "bonus": 4,
+      "label": "「少額の報酬」「作業ミス・連帯責任」「追加の送金」がそろっています（タスク詐欺の流れ）"
+    },
+    {
+      "id": "withdraw_prepay_investment",
+      "requires": [],
+      "ruleGroups": [
+        [
+          "withdraw_fee"
+        ]
+      ],
+      "contextPatterns": [
+        "投資|利益|運用益|資産|取引口座|暗号資産|仮想通貨|{FX}|株|配当"
+      ],
+      "minLevel": 3,
+      "bonus": 3,
+      "label": "投資の利益を引き出す前に、税金・解除料・認証料などを先に払わせようとしています"
+    },
+    {
+      "id": "ai_invest_yield_line",
+      "requires": [
+        "line"
+      ],
+      "ruleGroups": [
+        [
+          "auto_trade",
+          "ai_sidejob"
+        ],
+        [
+          "unrealistic_rate",
+          "unrealistic_rate_en",
+          "unrealistic_account_interest"
+        ]
+      ],
+      "contextPatterns": [
+        "投資|運用|利回り|月利|年利|配当|{FX}|株|暗号資産|仮想通貨"
+      ],
+      "minLevel": 2,
+      "bonus": 2,
+      "label": "「AI投資」「非常に高い利回り」「LINEへの誘導」がそろっています"
+    },
+    {
+      "id": "free_seminar_easy_contract",
+      "requires": [],
+      "ruleGroups": [
+        [
+          "seminar"
+        ],
+        [
+          "easy_passive",
+          "easy_anyone"
+        ],
+        [
+          "price_high",
+          "price_installment"
+        ]
+      ],
+      "contextPatterns": [
+        "副業|在宅|稼|収入|月収"
+      ],
+      "minLevel": 2,
+      "bonus": 2,
+      "label": "「無料の副業セミナー」「簡単に稼げるという宣伝」「高額な契約」がそろっています"
+    }
+  ],
+  "mitigations": [
+    {
+      "id": "warning_article",
+      "label": "詐欺の手口や注意喚起を説明する文章",
+      "patterns": [
+        "(詐欺|悪質商法|悪質な勧誘|被害)[^。!?]{0,12}(注意|手口|事例|相談|対策|防止|気をつけ|遭わない|に遭った|急増|多発|相次)"
+      ],
+      "weight": 4,
+      "capsLevel": true
+    },
+    {
+      "id": "public_agency",
+      "label": "公的機関・相談窓口への言及",
+      "patterns": [
+        "注意喚起",
+        "消費者庁",
+        "国民生活センター",
+        "消費生活センター",
+        "警察庁",
+        "消費者ホットライン"
+      ],
+      "weight": 2
+    },
+    {
+      "id": "risk_disclosure",
+      "label": "正規の金融業者に見られるリスクの説明",
+      "patterns": [
+        "元本(を|が)?(割り込|保証され(ません|ない)|割れ(の|する))",
+        "損失(が|を)(生じ|被)る(おそれ|可能性|場合)",
+        "投資(判断)?は(ご)?自身の(判断|責任)",
+        "将来の(運用)?成果を保証するものではありません",
+        "金商\\)?第[0-9]+号"
+      ],
+      "weight": 2
+    }
+  ],
+  "mitigationCap": 8,
+  "thresholds": {
+    "level1": 3,
+    "level2": 8,
+    "level3": 14,
+    "level2MinCategories": 2,
+    "level3MinCategories": 3,
+    "level3MinCategoriesWithRemittance": 2,
+    "level3RequiredAnyOf": [
+      "guarantee",
+      "remittance"
+    ],
+    "weakSignals": {
+      "categories": [
+        "urgency",
+        "price",
+        "lifestyle",
+        "testimonial",
+        "seminar",
+        "unrealistic",
+        "infoMissing",
+        "noJpRegistration",
+        "taskScam"
+      ],
+      "ruleIds": [
+        "line_link",
+        "line_signup",
+        "line_gift",
+        "line_group"
+      ]
+    }
+  },
+  "solicitation": {
+    "actionPatterns": [
+      "(今すぐ|こちらから|下記から|ボタンから|このリンクから)[^。!?]{0,16}(申[し]?込|登録|追加|購入|入会|予約|参加)",
+      "(申[し]?込[みむ]|登録|追加|購入|入会|予約|参加)(して(ください|今すぐ)|はこちら|を受け付け|受付中|するには)",
+      "(セミナー|説明会|勉強会|個別相談|面談)(へ|に)(お申[し]?込|参加|予約)",
+      "{LINE}[^。!?]{0,12}(登録|友だち追加|友達追加)[^。!?]{0,16}(受け取|お申し?込|参加|詳細を案内)",
+      "口座(を開設(する|してください)|開設(はこちら|は最短))",
+      "open(a|an|your)(live)?(trading)?account"
+    ],
+    "topicPatterns": [
+      "副業|投資|情報商材|自動売買|せどり|稼ぎ方|暗号資産|仮想通貨|{FX}|競馬|馬券|パチスロ|パチンコ|スロット"
+    ]
+  },
+  "checkout": {
+    "patterns": [
+      "お支払い方法",
+      "決済方法",
+      "購入手続き",
+      "お申し?込みフォーム",
+      "申込フォーム",
+      "カード番号",
+      "振込先",
+      "入金先",
+      "(注文|購入|申し?込み)を確定",
+      "お支払いへ進む"
+    ],
+    "urlPatterns": [
+      "/(checkout|cart|payment|pay|order|purchase|entry|apply|form)([/?#.]|$)"
+    ],
+    "minHits": 2,
+    "multiplier": 1.3
+  },
+  "lineLink": {
+    "hrefPatterns": [
+      "^https?://(line\\.me|lin\\.ee|liff\\.line\\.me|page\\.line\\.me)/",
+      "^line://"
+    ],
+    "rule": {
+      "id": "line_link",
+      "category": "line",
+      "label": "LINEの友だち追加ページへのリンクがあります",
+      "weight": 2
+    }
+  },
+  "missingInfo": {
+    "patterns": [
+      "特定商取引法",
+      "特商法",
+      "運営会社",
+      "会社概要",
+      "販売業者",
+      "運営者情報",
+      "事業者名",
+      "販売事業者",
+      "運営責任者"
+    ],
+    "appliesWhenAnyOf": [
+      "price",
+      "guarantee",
+      "line",
+      "coaching",
+      "aiSidejob"
+    ],
+    "minTextLength": 400,
+    "rule": {
+      "id": "missing_business_info",
+      "category": "infoMissing",
+      "label": "運営会社や特定商取引法に基づく表記が見当たりません",
+      "weight": 2
+    }
+  },
+  "missingRegistration": {
+    "patterns": [
+      "金商\\)?第?[0-9]+号",
+      "金融商品取引業者",
+      "財務局長",
+      "暗号資産交換業者",
+      "金融先物取引業協会",
+      "日本証券業協会"
+    ],
+    "appliesWhenAnyOf": [
+      "offshoreBroker"
+    ],
+    "minTextLength": 100,
+    "rule": {
+      "id": "no_jp_registration",
+      "category": "noJpRegistration",
+      "label": "日本の金融商品取引業・暗号資産交換業の登録番号（「関東財務局長（金商）第○号」など）の表記が見当たりません",
+      "weight": 2
+    }
+  },
+  "themes": [
+    {
+      "id": "unregistered",
+      "anyOf": [
+        "offshoreBroker"
+      ],
+      "withAnyOf": [
+        "noJpRegistration"
+      ],
+      "maxLevel": 2
+    },
+    {
+      "id": "coaching",
+      "anyOf": [
+        "coaching",
+        "aiSidejob"
+      ],
+      "withAnyOf": [
+        "line",
+        "seminar"
+      ],
+      "unless": [
+        "guarantee",
+        "remittance"
+      ],
+      "maxLevel": 2
+    }
+  ],
+  "fsa": {
+    "nameMatching": false,
+    "nameContextPatterns": [
+      "fx|forex|証拠金|為替|投資|暗号資産|仮想通貨|crypto|bitcoin|ビットコイン|trading|トレード|取引口座|ブローカー|broker|デリバティブ|cfd|バイナリー|binary|ファンド|fund"
+    ],
+    "minNameLength": 6
+  },
+  "trustedDomains": [
+    "chatgpt.com",
+    "chat.openai.com",
+    "gemini.google.com"
+  ],
+  "contextualDomains": [
+    "www.caa.go.jp",
+    "www.jra.go.jp",
+    "jra.jp",
+    "www.jra.jp",
+    "amazon.co.jp",
+    "www.amazon.co.jp",
+    "amazon.com",
+    "www.amazon.com",
+    "www.rakuten.co.jp",
+    "item.rakuten.co.jp",
+    "search.rakuten.co.jp",
+    "books.rakuten.co.jp",
+    "www.yahoo.co.jp",
+    "news.yahoo.co.jp",
+    "shopping.yahoo.co.jp",
+    "zozo.jp",
+    "www.zozo.jp",
+    "yodobashi.com",
+    "www.yodobashi.com",
+    "biccamera.com",
+    "www.biccamera.com",
+    "nhk.or.jp",
+    "www.nhk.or.jp",
+    "nhk.jp",
+    "www.nhk.jp",
+    "sbisec.co.jp",
+    "rakuten-sec.co.jp",
+    "monex.co.jp",
+    "matsui.co.jp",
+    "nomura.co.jp",
+    "daiwa.jp",
+    "smbcnikko.co.jp",
+    "mizuho-sc.com",
+    "mufg.jp",
+    "smbc.co.jp",
+    "mizuhobank.co.jp",
+    "resonabank.co.jp",
+    "nikkei.com",
+    "asahi.com",
+    "yomiuri.co.jp",
+    "mainichi.jp",
+    "sankei.com",
+    "jiji.com",
+    "kyodonews.jp",
+    "toyokeizai.net",
+    "diamond.jp",
+    "president.jp",
+    "itmedia.co.jp",
+    "bunshun.jp",
+    "gendai.media",
+    "www.nikkei.com",
+    "www.asahi.com",
+    "www.yomiuri.co.jp",
+    "www.sankei.com",
+    "www.jiji.com"
+  ],
+  "skipUrlPatterns": [
+    "^https?://(www\\.)?google\\.(com|co\\.jp)/search([/?#]|$)",
+    "^https?://search\\.yahoo\\.co\\.jp/",
+    "^https?://(www\\.)?bing\\.com/search([/?#]|$)",
+    "^https?://duckduckgo\\.com/([?#]|$)"
+  ],
+  "knownBadDomains": []
+}
